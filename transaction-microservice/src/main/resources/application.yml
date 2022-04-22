@@ -1,5 +1,5 @@
 server:
-  port: 4000
+  port: 8073
 
 spring:
   application:
@@ -12,7 +12,7 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}"
+    url: "jdbc:mysql://epicName:3306/alinedb"
     initialization-mode: always
 
 app:
