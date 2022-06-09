@@ -30,6 +30,7 @@ pipeline {
         stage('Docker Build') {
             steps {
 				echo 'Building Docker Image...'
+				sh "docker context use default" 
                 script{
 					app = docker.build("transactionms")
 				}
